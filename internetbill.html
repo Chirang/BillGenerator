@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header div {
+            text-align: right;
+        }
+        .details, .terms, .acknowledgement {
+            margin-top: 20px;
+        }
+        .details table, .acknowledgement table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .details th, .details td, .acknowledgement th, .acknowledgement td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .details th {
+            background-color: #f2f2f2;
+        }
+        .terms {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .terms ol {
+            padding-left: 20px;
+        }
+        .editable {
+            border: none;
+            background: transparent;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://via.placeholder.com/150?text=Logo" alt="Logo">
+        <div>
+            <p>Name: <span contenteditable="true" class="editable">Chirang Malviya</span></p>
+            <p>Invoice No: <span contenteditable="true" class="editable">ING401</span></p>
+            <p>Account No: <span contenteditable="true" class="editable">567839209402839</span></p>
+            <p>Bill Date: <span contenteditable="true" class="editable">1 May 2024</span></p>
+        </div>
+    </div>
+
+    <div class="details">
+        <p><span contenteditable="true" class="editable">Airtel</span></p>
+        <p><span contenteditable="true" class="editable">Ground Floor 14, 1, Main Road, near Ganesha Temple, Seethappa Colony, HAL 3rd Stage, Puttappa layout, New Tippasandra, Bengaluru, Karnataka 560075</span></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Taxable Amount ₹</th>
+                    <th>CGST Rate%</th>
+                    <th>CGST Amount ₹</th>
+                    <th>SGST Rate%</th>
+                    <th>SGST Amount ₹</th>
+                    <th>Payments Received ₹</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true" class="editable">6779.66</td>
+                    <td>9%</td>
+                    <td contenteditable="true" class="editable">610.17</td>
+                    <td>9%</td>
+                    <td contenteditable="true" class="editable">610.17</td>
+                    <td contenteditable="true" class="editable">8000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Plan Speed</th>
+                    <th>Plan Package</th>
+                    <th>Plan Validity</th>
+                    <th>Discount</th>
+                    <th>Plan Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true" class="editable">20Mbps</td>
+                    <td contenteditable="true" class="editable">Unlimited</td>
+                    <td contenteditable="true" class="editable">Monthly</td>
+                    <td contenteditable="true" class="editable">0</td>
+                    <td contenteditable="true" class="editable">₹ 8000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Invoice No.</th>
+                    <th>Internet Service Description</th>
+                    <th>Amount Incl. Tax</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true" class="editable">ING401</td>
+                    <td contenteditable="true" class="editable">₹ 8000</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="terms">
+        <h3>Terms and Conditions</h3>
+        <ol>
+            <li contenteditable="true" class="editable">Cheques to be in favour of "Airtel".</li>
+            <li contenteditable="true" class="editable">In case of cheque bounce, ₹ 100/- penalty will be applicable.</li>
+            <li contenteditable="true" class="editable">Airtel shall levy late fee charge in case the bill is paid after the due date.</li>
+            <li contenteditable="true" class="editable">In case of overdue, the right to deactivate your services, is reserved.</li>
+            <li contenteditable="true" class="editable">This Invoice is system generated hence signature and stamp is not required.</li>
+        </ol>
+    </div>
+
+    <div class="acknowledgement">
+        <table>
+            <thead>
+                <tr>
+                    <th>Account No</th>
+                    <th>Subscriber Name</th>
+                    <th>Payment Method</th>
+                    <th>Invoice No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true" class="editable">567839209402839</td>
+                    <td contenteditable="true" class="editable">Chirang Malviya</td>
+                    <td contenteditable="true" class="editable">Cash</td>
+                    <td contenteditable="true" class="editable">ING401</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
